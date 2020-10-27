@@ -22,7 +22,7 @@ public class Driver {
 				return c.getCourseName();
 			}
 		}
-		return "This Instructor does not teach any courses";
+		return "This instructor does not teach any courses";
 	}
 	
 	public static void main(String[] args) {
