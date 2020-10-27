@@ -46,7 +46,7 @@ public class Driver {
 		printCourses(courses);
 		
 		System.out.println("");
-		System.out.print("Enter the last name of student: ");
+		System.out.print("Enter the last name of instructor: ");
 		String lName = input.next();
 		System.out.println(findInstructor(courses, lName));
 	}
