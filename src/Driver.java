@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthScrollPaneUI;
-
 public class Driver {
 	
 	public static void printCourses(ArrayList<Course> course) {
