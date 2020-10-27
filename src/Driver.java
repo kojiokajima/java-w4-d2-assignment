@@ -1,16 +1,18 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthScrollPaneUI;
+
 public class Driver {
 	
 	public static void printCourses(ArrayList<Course> course) {
 		for (Course c : course) {
 			System.out.println("Course name is " + c.getCourseName() + " which takes" + c.getDuration() +
-					" weeks. The Instructor of this course is " +
+					" weeks.\nThe Instructor of this course is " +
 					c.getInstructor().getFirstName() +  " " + c.getInstructor().getLastName() +
 					" who is a " + c.getInstructor().getStatus(c.getInstructor().getYearOfExperience()) +
-					" instructor with" + c.getInstructor().getYearOfExperience() +
-					" year of experience. The Phone number of Instructor is " + c.getInstructor().getPhoneNumber());			
+					" instructor with " + c.getInstructor().getYearOfExperience() +
+					" year of experience.\nThe Phone number of Instructor is " + c.getInstructor().getPhoneNumber());			
 		}
 	}
 
@@ -43,6 +45,7 @@ public class Driver {
 					
 		printCourses(courses);
 		
+		System.out.println("");
 		System.out.print("Enter the last name of student: ");
 		String lName = input.next();
 		System.out.println(findInstructor(courses, lName));
