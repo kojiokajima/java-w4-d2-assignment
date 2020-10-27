@@ -67,6 +67,8 @@ public class Instructor {
 	public void setYearOfExperience(int yearOfExperience) {
 		if (yearOfExperience > 1) {
 			this.yearOfExperience = yearOfExperience;
+		} else {
+			this.yearOfExperience = 1;
 		}
 	}
 	

@@ -32,6 +32,8 @@ public class Course {
 	public void setDuration(int duration) {
 		if (duration > 4) {
 			this.duration = duration;
+		} else {
+			this.duration = 4;
 		}
 	}
 	public void setInstructor(Instructor instructor) {
