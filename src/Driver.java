@@ -8,11 +8,11 @@ public class Driver {
 	public static void printCourses(ArrayList<Course> course) {
 		for (Course c : course) {
 			System.out.println("Course name is " + c.getCourseName() + " which takes" + c.getDuration() +
-					" weeks.\nThe Instructor of this course is " +
+					" weeks.\nThe instructor of this course is " +
 					c.getInstructor().getFirstName() +  " " + c.getInstructor().getLastName() +
 					" who is a " + c.getInstructor().getStatus(c.getInstructor().getYearOfExperience()) +
 					" instructor with " + c.getInstructor().getYearOfExperience() +
-					" year of experience.\nThe Phone number of Instructor is " + c.getInstructor().getPhoneNumber());			
+					" year of experience.\nThe Phone number of the instructor is " + c.getInstructor().getPhoneNumber());			
 		}
 	}
 
@@ -22,7 +22,7 @@ public class Driver {
 				return c.getCourseName();
 			}
 		}
-		return "No lecture found";
+		return "This Instructor does not teach any courses";
 	}
 	
 	public static void main(String[] args) {
